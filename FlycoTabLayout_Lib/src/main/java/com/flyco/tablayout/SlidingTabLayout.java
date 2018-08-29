@@ -137,7 +137,7 @@ public class SlidingTabLayout extends HorizontalScrollView implements ViewPager
         TypedArray a = context.obtainStyledAttributes(attrs, systemAttrs);
         mHeight = a.getDimensionPixelSize(0, ViewGroup.LayoutParams.WRAP_CONTENT);
         a.recycle();
-       
+
     }
 
     private void obtainAttributes(Context context, AttributeSet attrs) {
