@@ -61,7 +61,7 @@ import java.util.Comparator;
  * the compatibility library, requiring changes to the source code
  * of apps when they are compiled against the newer version.</p>
  */
-public class NoPreloadViewPager extends ViewGroup {
+public class LazyViewPager extends ViewGroup {
     private static final String TAG = "NoPreLoadViewPager";
     private static final boolean DEBUG = false;
 
@@ -224,12 +224,12 @@ public class NoPreloadViewPager extends ViewGroup {
         }
     }
 
-    public NoPreloadViewPager(Context context) {
+    public LazyViewPager(Context context) {
         super(context);
         initViewPager();
     }
 
-    public NoPreloadViewPager(Context context, AttributeSet attrs) {
+    public LazyViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
         initViewPager();
     }
